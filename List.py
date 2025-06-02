@@ -4,7 +4,7 @@ for i in range(len(List)):
     if i < len(List):
         print(List[i])
     else:
-        print("INVALID INDEX")
+        print("INVALID INPUT GIVEN")
                
 print("The length of the list is : ", len(List))
 
