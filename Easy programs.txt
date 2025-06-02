@@ -1,0 +1,46 @@
+Here are some simple Python apps you can build to learn programming basics, each offering hands-on experience with core concepts like variables, loops, functions, and user input:
+
+- **To-Do List App**  
+  Lets users add, remove, and manage tasks. This project teaches you about lists, functions, and handling user input[5].
+
+- **Number Guessing Game**  
+  The computer randomly selects a number, and the user tries to guess it. You’ll practice loops, conditionals, and random number generation[6].
+
+- **Rock, Paper, Scissors Game**  
+  A simple game where the user plays against the computer. This project covers input handling and basic logic[2].
+
+- **Hangman**  
+  The classic word-guessing game. You’ll use loops, conditionals, and string manipulation[6].
+
+- **Countdown Timer**  
+  Create a timer that counts down from a user-specified number of seconds, teaching you about time modules and loops[3].
+
+- **Simple Calculator**  
+  Build a calculator that can add, subtract, multiply, and divide numbers. This reinforces arithmetic operations and function creation.
+
+- **Password Generator**  
+  Generate random passwords of a given length using Python’s random module[2].
+
+- **Weather App**  
+  Use an API (like OpenWeatherMap) to fetch and display current weather for a user-input city, introducing you to APIs and JSON parsing[1].
+
+- **Word Guessing Game**  
+  Similar to Hangman, but with simpler logic—guess a word one letter at a time[5].
+
+- **Contact Address Book**  
+  Store and manage contacts using dictionaries and lists[5].
+
+These projects are beginner-friendly and help you apply Python basics in practical, fun ways. Many of them can be expanded as you learn more, adding features like saving data to files or creating a simple graphical interface[5][6].
+
+Citations:
+[1] https://www.codingal.com/coding-for-kids/blog/python-projects-beginners/
+[2] https://www.dataquest.io/blog/python-projects-for-beginners/
+[3] https://www.freecodecamp.org/news/python-projects-for-beginners/
+[4] https://rivery.io/blog/free-resources-learn-python/
+[5] https://mimo.org/blog/19-python-projects-for-beginners
+[6] https://www.coursera.org/articles/python-projects-for-beginners
+[7] https://www.learnpython.org
+[8] https://www.youtube.com/watch?v=yVl_G-F7m8c
+
+---
+Answer from Perplexity: https://www.perplexity.ai/search/code-a-calculator-in-python-PttAmmVbRza8U62GOutXAw?login-source=visitorGate&login-new=true&utm_source=copy_output

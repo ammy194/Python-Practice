@@ -1,0 +1,21 @@
+# class Student:
+#     name = "Amartya"
+#     def __init__(self):
+#         print("Adding new students to database...")
+    
+# s1 = Student()
+# # print(s1.name)
+
+# # s2 = Student()
+# # print(s2.name)
+
+# # # ----------------------------------------
+
+# # class Car:
+# #     color = "blue"
+# #     brand = "mercedes"
+
+# # car1 = Car()  
+# # print(car1.color)
+# # print(car1.brand) 
+
