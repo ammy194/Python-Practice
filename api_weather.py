@@ -20,10 +20,11 @@ response = requests.get(complete_url)
 data = response.json()
 
 # Check the HTTP status code in JSON response
-if data["cod"] != "404":
+if data["cod"] == 200:
     main = data["main"]
     weather = data["weather"][0]
-
+    time = data["dt"]
+    timezone = data["timezone"]
     # Extract values
     temp_kelvin = main["temp"]
     temp_celsius = round(temp_kelvin - 273.15, 2)  # Optional: Convert to Celsius
