@@ -5,7 +5,7 @@ def prime_Ammy(y):
     composite_numbers = []
     for num in y:
         if num > 1:
-            for i in range(2, num):
+            for i in range(2, int(num/2) + 1):
                 if num % i == 0:
                     composite_numbers.append(num)
                     break  # important to stop checking once it's composite
