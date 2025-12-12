@@ -1,0 +1,94 @@
+# --- Basics / REPL ---
+# run: python file.py   |  interactive: python or ipython
+# comments
+# single-line:  # comment
+# multi-line: """docstring"""
+
+# --- Types / literals ---
+None            # null
+True/False      # booleans
+123, 3.14       # int, float
+"str" or 'str'  # strings
+[1,2,3]         # list (mutable)
+(1,2)           # tuple (immutable)
+{"a":1}         # dict (key->value)
+{1,2,3}         # set (unique)
+
+# --- Common idioms ---
+# f-strings
+name = "Amartya"
+msg = f"Hello {name}, {2+2}"
+
+# unpacking
+a, b = (1,2)
+first, *rest = [1,2,3,4]
+
+# --- Loops & conditionals ---
+for i in range(5):       # 0..4
+    print(i)
+
+i = 0
+while i < 5:
+    i += 1
+
+if x > 0:
+    ...
+elif x == 0:
+    ...
+else:
+    ...
+
+# --- Functions ---
+def add(a:int, b:int) -> int:
+    """Return sum."""
+    return a + b
+
+# lambda (single expression)
+sq = lambda x: x*x
+
+# --- List / Dict comprehensions ---
+squares = [x*x for x in range(10) if x%2==0]
+d = {k:v for k,v in pairs}
+
+# --- Useful methods ---
+lst.append(x); lst.pop(); lst.sort(); lst.reverse()
+s.split(','); s.strip(); s.lower(); s.replace('a','b')
+d.keys(); d.values(); d.items()
+set.add(x); set.remove(x)
+
+# --- File I/O ---
+with open("file.txt","r", encoding="utf-8") as f:
+    text = f.read()
+
+with open("out.txt","w", encoding="utf-8") as f:
+    f.write("hi\n")
+
+# --- Exceptions ---
+try:
+    risky()
+except ValueError as e:
+    print(e)
+finally:
+    cleanup()
+
+# --- Classes ---
+class Person:
+    def __init__(self, name):
+        self.name = name
+    def greet(self):
+        return f"Hi {self.name}"
+
+# --- Modules / pip ---
+import os, sys, json
+from math import sqrt
+# pip install package
+
+# --- Shortcuts (do these instead of memorizing) ---
+# 1) Use built-in help() and dir()
+# 2) Google / ChatGPT for exact syntax
+# 3) Keep this file as your cheatsheet
+
+# --- Quick pitfalls ---
+# indent error -> use 4 spaces
+# mutable default args: def f(a, L=None): L=[] if L is None else L
+# integer division in py3: 5/2 = 2.5, 5//2 = 2
