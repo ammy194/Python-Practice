@@ -100,29 +100,42 @@
 # print(mean_value)
 
 
-import pandas as pd
+# import pandas as pd
 
-data = {
-    "Roll": [1,2,3,4],
-    "Name": ["Amartya","Riya","Karan","Maya"],
-    "Maths": [80, 35, 60, 45],
-    "Physics": [75, 40, 50, 42],
-    "Chemistry": [90, 38, 55, 48]
-}
-df = pd.DataFrame(data)
+# data = {
+#     "Roll": [1,2,3,4],
+#     "Name": ["Amartya","Riya","Karan","Maya"],
+#     "Maths": [80, 35, 60, 45],
+#     "Physics": [75, 40, 50, 42],
+#     "Chemistry": [90, 38, 55, 48]
+# }
+# df = pd.DataFrame(data)
 
 # Percentage (simple average of three subjects)
-df["Percentage"] = df[["Maths","Physics","Chemistry"]].mean(axis=1)
+# df["Percentage"] = df[["Maths","Physics","Chemistry"]].mean(axis=1)
 
-# i. Status
-df["Status"] = df["Percentage"].apply(lambda p: "Pass" if p >= 40 else "Fail")
+# # i. Status
+# df["Status"] = df["Percentage"].apply(lambda p: "Pass" if p >= 40 else "Fail")
 
-# ii. Average marks in each subject
-subject_averages = df[["Maths","Physics","Chemistry"]].mean()
+# # ii. Average marks in each subject
+# subject_averages = df[["Maths","Physics","Chemistry"]].mean()
 
-# iii. Top 3 students by Percentage
-top3 = df.sort_values("Percentage", ascending=False).head(3)
+# # iii. Top 3 students by Percentage
+# top3 = df.sort_values("Percentage", ascending=False).head(3)
 
-print(df)
-print("\nSubject averages:\n", subject_averages)
-print("\nTop 3 by percentage:\n", top3[["Roll","Name","Percentage"]])
+# print(df)
+# print("\nSubject averages:\n", subject_averages)
+# print("\nTop 3 by percentage:\n", top3[["Roll","Name","Percentage"]])
+
+
+import numpy as np
+
+# 1-D array from list
+l1 = [1,2,3,4]
+a1 = np.array(l1)
+print("1D:", a1, "shape:", a1.shape)
+
+# 2-D array from nested lists
+l2 = [[1,2,3],[4,5,6]]
+a2 = np.array(l2)
+print("2D:\n", a2, "shape:", a2.shape)
